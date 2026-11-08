@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>STUDENT FORM</h2>
+
+    <form id="studentForm">
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" value="yosuva" required>
+        </div>
+</body>
+</html>
+        <div class="form-row">
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="1" value="23" required>
+        </div>
+        <div class="form-row">
+            <span>Gender</span>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="Male" checked required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="JavaScript" selected>JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" value="yosuva@gmail.com" required>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">NAME</th>
+                    <th scope="col">AGE</th>
+                    <th scope="col">COURSE</th>
+                    <th scope="col">GENDER</th>
+                    <th scope="col">EMAIL</th>
+                    <th scope="col">ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="studentList">
+                <tr>
+                    <td>Amal</td>
+                    <td>22</td>
+                    <td>PYTHON</td>
+                    <td>Male</td>
+                    <td>Amal@gmail.com</td>
+                    <td><button class="delete-button" type="button">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>yosuva</td>
+                    <td>23</td>
+                    <td>JavaScript</td>
+                    <td>Male</td>
+                    <td>yosuva@gmail.com</td>
+                    <td><button class="delete-button" type="button">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="java.js"></script>
+    
